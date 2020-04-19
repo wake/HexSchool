@@ -178,6 +178,20 @@ h1.title {
   order: 1;
 }
 
+.education ol li::after {
+  content: "";
+  border-left: 2px solid #cad4e2;
+  height: 100%;
+  position: absolute;
+  left: -24.5px;
+  z-index: -1;
+  top: 15px;
+}
+
+.education ol li:last-child::after {
+  display: none;
+}
+
 
 /*
  * Skills
@@ -211,7 +225,9 @@ h1.title {
   font-weight: 400;
   text-align: center;
   padding: 26px 0 2px 3px;
-  border-bottom: 2px solid #fff;;
+  border-bottom: 1px solid #fff;
+  position: relative;
+  z-index: 9;
 }
 
 .skills h2,
