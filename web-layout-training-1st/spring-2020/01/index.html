@@ -6,27 +6,32 @@
   <meta name="description" content="Hex school, web layout training 1st course (Spring 2020), lesson 01 pratice">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="assets/main.css">
 </head>
 <body>
 
   <!-- Name -->
-  <h1>Joanne Chen</h1>
+  <h1 class="title">Joanne Chen</h1>
 
   <!-- Avatar -->
-  <img src="assets/images/avatar.png" alt="my-avatar" class="avatar" />
+  <figure class="avatar">
+    <img src="assets/images/avatar.png" alt="my-avatar" />
+    <figcaption>My Avatar</figcaption>
+  </figure>
 
   <!-- Profile start -->
   <section class="profile">
-    <h2>個人資料 Profile</h2>
+    <h2>個人資料 <span lang="en">Profile</span></h2>
     <ul>
-      <li>陳久安 Joanne Chen</li>
+      <li class="dot">陳久安 Joanne Chen</li>
       <li>1997-</li>
       <li>應屆畢業生／接案設計師／UI 設計實習生</li>
+    </ul>
+    <ul>
       <li>UI 設計修行中／立志當斜槓青年</li>
       <li>
-        獨立接案，內容涵蓋
-        <ul>
+        獨立接案，內容涵蓋：
+        <ul class="list">
           <li>品牌規劃</li>
           <li>視覺設計</li>
           <li>編輯設計</li>
@@ -40,17 +45,17 @@
 
   <!-- Education start -->
   <section class="education">
-    <h2>學歷 Education</h2>
-    <ol>
-      <li><time>2016－2020</time>國立六角師範大學 視覺設計學系 學士學位</li>
-      <li><time>2013－2016</time>國立六腳高級中學 美術班</li>
+    <h2>學歷 <span lang="en">Education</span></h2>
+    <ol class="dot">
+      <li class="time"><time>2016－2020</time>國立六角師範大學 視覺設計學系 學士學位</li>
+      <li class="time"><time>2013－2016</time>國立六腳高級中學 美術班</li>
     </ol>
   </section>
   <!-- Education close -->
 
   <!-- Skills start -->
   <section class="skills">
-    <h2>技能 Skills</h2>
+    <h2>技能 <span lang="en">Skills</span></h2>
     <ul>
       <li>Adobe Photoshop</li>
       <li>Adobe Illustrator</li>
@@ -58,8 +63,8 @@
       <li>Adobe Indesign</li>
       <li>C4D</li>
       <li>Adobe Premiere</li>
-      <li>
-        語言
+      <li class="list">
+        語言：
         <ul>
           <li>中文</li>
           <li>英文</li>
@@ -71,49 +76,42 @@
 
   <!-- Work Experience start -->
   <section class="work-experience">
-    <h2>工作經驗 Work Experience</h2>
-    <ul>
-      <li>
-        <h3><time>2019/07－2020/06</time>六角學院 視覺設計實習生</h3>
-        <img src="assets/images/logo-01.png" alt="">
+    <h2>工作經驗 <span lang="en">Work Experience</span></h2>
+    <dl>
+      <dt class="time"><time>2019/07－2020/06</time>六角學院 視覺設計實習生</dt>
+      <dd>
+        <img src="assets/images/logo-01.png" alt="hex-school-logo">
         <p>在六角學院長達一年的實習中，前期藉由公司課程掌握 HTML, CSS, Adobe XD，設計給學員使用的名片設計教材，並參與六角週年活動，設計各式周邊商品及活動網路宣傳圖。後期進入 UI 設計範疇，設計六角共筆部落格 - W3HexSchool、六角發案服務網介面設計、供給學員的教 案- RWD官方網站設計，並設計各式網頁活動宣傳圖。</p>
-      </li>
-      <li><time>2019</time>獨立接案 Hao Jun 酒標設計</li>
-      <li><time>2019</time>獨立接案 Exulans 酒標設計</li>
-      <li><time>2019</time>獨立接案 桃園平鎮市民健走活動提案</li>
-      <li>
-        <h3><time>2018－2019</time>Simtree 興趣咖啡 工讀生</h3>
+      </dd>
+      <dt class="time"><time>2019</time>獨立接案 Hao Jun 酒標設計</dt>
+      <dt class="time"><time>2019</time>獨立接案 Exulans 酒標設計</dt>
+      <dt class="time"><time>2019</time>獨立接案 桃園平鎮市民健走活動提案</dt>
+      <dt class="time"><time>2018－2019</time>Simtree 興趣咖啡 工讀生</dt>
+      <dd>
         <img src="assets/images/logo-02.png" alt="">
         <p>擔任外場及吧台服務生，學習咖啡相關知識。</p>
-      </li>
-    </ul>
+      </dd>
+    </dl>
   </section>
   <!-- Work Experience close -->
 
   <!-- Contact Method start -->
   <section class="contact-method">
-    <h2>聯絡方式 Contact Method</h2>
+    <h2>聯絡方式 <span lang="en">Contact Method</span></h2>
     <address>
       <dl>
-
         <dt>Mail</dt>
         <dd>xxxd@hexschool.com</dd>
-
         <dt>Phone</dt>
         <dd>0910123456</dd>
-
-        <dt>Kaohsiung, Taiwan</li>
-
+        <dt class="single">Kaohsiung, Taiwan</dt>
         <dt>作品連結</dt>
         <dd><a href="https://www.behance.net/xxxdddddd">https://www.behance.net/xxxdddddd</a></dd>
-
-        <dt>Facebook</dt>
+        <dt class="social">Facebook</dt>
         <dd><a href="#"><img src="assets/images/icon-fb.png" alt="my-facebook"></a></dd>
-
-        <dt>Instagram</dt>
+        <dt class="social">Instagram</dt>
         <dd><a href="#"><img src="assets/images/icon-ig.png" alt="my-instagram"></a></dd>
-
-        <dt>Line</dt>
+        <dt class="social">Line</dt>
         <dd><a href="#"><img src="assets/images/icon-line.png" alt="my-line"></a></dd>
       </dl>
     </address>
